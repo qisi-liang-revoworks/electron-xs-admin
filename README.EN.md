@@ -11,8 +11,8 @@ For a full demo of [vue-xs-admin](https://github.com/jsxiaosi/vue-xs-admin), swi
 
 ## Preview
 
-- [GitHub Site](https://jsxiaosi.github.io/vue-xs-admin/)
-- [Gitee Site](https://jsxiaosi.gitee.io/vue-xs-admin)
+- [github site](https://jsxiaosi.github.io/mini-xs-admin/)
+- [gitee site](http://jsxiaosi.gitee.io/mini-xs-admin)
 
 Account: admin  
 Password: admin123
