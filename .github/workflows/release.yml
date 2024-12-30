@@ -27,9 +27,6 @@ jobs:
           node-version: '22'
           cache: pnpm
 
-      - name: Install snapcraft
-        run: sudo snap install snapcraft --classic
-
       - name: Install dependencies
         run: pnpm install
 
