@@ -3,6 +3,10 @@
   "productName": "vue-xs-admin",
   "copyright": "Copyright © 2022 <小斯斯>",
   "icon": "public/logo-512x512.png",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "mac": {
     "target": ["dmg"],
     "category": "public.app-category.utilities"
