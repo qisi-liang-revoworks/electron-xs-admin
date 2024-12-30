@@ -5,7 +5,9 @@
   "icon": "public/logo-512x512.png",
   "publish": {
     "provider": "github",
-    "releaseType": "release"
+    "releaseType": "release",
+    "owner": "qisi-liang-revoworks",
+    "repo": "electron-xs-admin"
   },
   "mac": {
     "target": ["dmg"],
