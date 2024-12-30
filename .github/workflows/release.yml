@@ -12,7 +12,11 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
       - name: Checkout repository
@@ -31,11 +35,12 @@ jobs:
         run: pnpm install
 
       - name: Build Electron app
-        run: pnpm run electron:build-always
+        run: pnpm run electron:build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload release assets
         uses: softprops/action-gh-release@v2
         with:
-          files: dist_electron/release/* # 修改为你的构建输出路径
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          files: dist_electron/release/*
+          
